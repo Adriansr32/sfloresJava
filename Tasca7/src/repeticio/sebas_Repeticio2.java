@@ -13,7 +13,7 @@ public class sebas_Repeticio2 {
 	      int jugadaJugador;
 
 	      do {
-	          System.out.println("Introdueix 0 per pedra, 1 per paper o 2 per tisores:");
+	          System.out.println("Introdueix un 0 per pedra, un 1 per paper o un 2 per tisores:");
 	          jugadaJugador = in.nextInt();
 	          int jugadaOrdinador = (int)(Math.random() * 3);
 
@@ -38,7 +38,7 @@ public class sebas_Repeticio2 {
 	          System.out.println("Ordinador ha tret " + jugadaOrdinadorStr + ". Jugador ha tret " + jugadaJugadorStr + ".");
 
 	          if (jugadaJugador == jugadaOrdinador) {	
-	              System.out.println("És un empat.");
+	              System.out.println("És un empat!.");
 	          } else if ((jugadaJugador == 0 && jugadaOrdinador == 2) ||
 	                     (jugadaJugador == 1 && jugadaOrdinador == 0) ||
 	                     (jugadaJugador == 2 && jugadaOrdinador == 1)) {
