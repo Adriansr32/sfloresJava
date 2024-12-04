@@ -1,0 +1,28 @@
+package tasca3;
+import java.util.Scanner;
+public class Tasca3 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		System.out.print("Introdueix un numero: ");
+		int n = in.nextInt();
+		
+		int[] m = new int[n];
+		
+        for (int i = 0; i < n - 1; i++) {
+        	System.out.print((i + 1) + " Escriu: ");
+            m[i] = in.nextInt();
+            {
+            	int b = in.nextInt();
+            	System.out.print(" Escriu un altre numero: ");
+            	m[b] = in.nextInt();
+            }
+            
+        }
+        for (int i = 0; i < m.length - 1; i++) {
+        System.out.print(m[i] + ","); 
+	}
+        System.out.print(m[n - 1]);
+	}
+}
